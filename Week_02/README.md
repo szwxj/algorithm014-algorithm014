@@ -6,3 +6,10 @@
 3、判断两个数字是否一样；
 
 时间复杂度应该是：strlen(s1) + strlen(s2) + 26 ，也就是O(n)，不够优化；
+
+初学python，看来别人的经典题解，只有一行代码，深感惊讶，感叹python的简洁！！！
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return collections.Counter(s) == collections.Counter(t)
+
+
