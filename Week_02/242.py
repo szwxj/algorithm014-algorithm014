@@ -74,3 +74,11 @@ class Solution(object):
 s = Solution()
 print(s.isAnagram('a','b'))
 
+myDict = {}
+
+myDict['a'] = [0,0]
+if 'b' in myDict.keys():
+    print(True)
+else:
+    print(False)
+
