@@ -12,4 +12,6 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         return collections.Counter(s) == collections.Counter(t)
 
-
+但是这样的话，存在一个问题，这还能够学到算法吗？
+还是决定重新自己写一遍吧。
+自己按照创建字典的思路，想学习一下python，毕竟是初学，写的复杂一点没有关系，但是调试了很久，都没有调试成功，卡在对字典的理解上，想起老师说的不纠结，还是采用排序方法吧，看了一下题解，确实，排序方法很简单。
