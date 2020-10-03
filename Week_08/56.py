@@ -1,0 +1,15 @@
+from typing import List
+
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        intervals.sort(key=lambda x: x[0])
+
+        merge = []
+
+        for interval in intervals:
+            if len(merge)==0 or interval[0] > merge[-1][1]:
+                merge.append(interval)
+            else:
+                merge[-1][1] = max(merge[-1][1],interval[1])
+        
+        return merge
